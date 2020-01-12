@@ -15,6 +15,7 @@
   "dependencies": {
     "@sanity/base": "^0.147",
     "@sanity/cli": "^0.147",
+    "@sanity/code-input": "^0.147.0",
     "@sanity/components": "^0.147",
     "@sanity/core": "^0.147",
     "@sanity/dashboard": "^0.147",
@@ -27,7 +28,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "sanity-plugin-dashboard-widget-document-list": "^0.0.8",
-    "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
+    "sanity-plugin-dashboard-widget-netlify": "^1.0.1",
+    "sanity-plugin-markdown": "^1.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
