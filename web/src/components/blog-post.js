@@ -1,8 +1,8 @@
 import {format, distanceInWords, differenceInDays} from 'date-fns'
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 import {buildImageObj} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
-import PortableText from './portableText'
 import Container from './container'
 import AuthorList from './author-list'
 
@@ -29,7 +29,7 @@ function BlogPost (props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
-            {body}
+            <ReactMarkdown source={body} />
           </div>
           <aside className={styles.metaContent}>
             {publishedAt && (
