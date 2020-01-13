@@ -1,6 +1,6 @@
 export default {
-  name: 'body',
-  title: 'Body',
+  name: 'bodyMarkdown',
+  title: 'Post Body',
   type: 'markdown',
   options: {
     minRows: 20
