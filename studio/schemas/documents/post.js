@@ -64,7 +64,7 @@ export default {
     },
     {
       name: 'body',
-      type: 'bodyPortableText',
+      type: 'markdown',
       title: 'Body'
     }
   ],
