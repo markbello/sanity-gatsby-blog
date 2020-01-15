@@ -7,7 +7,7 @@ const codeStyles = {
   padding: '1px 6px',
   backgroundColor: '#f7f7f7',
   border: '1px solid #ededed',
-  borderRadius: '5px',
+  borderRadius: '5px'
 }
 
 class InlineCode extends PureComponent {
