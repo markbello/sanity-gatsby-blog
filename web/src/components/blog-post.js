@@ -1,17 +1,17 @@
 import {format, distanceInWords, differenceInDays} from 'date-fns'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
+import JustComments from 'gatsby-plugin-just-comments'
 import {buildImageObj} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
 import Container from './container'
-import AuthorList from './author-list'
 import CodeBlock from './code-block'
 import InlineCode from './inline-code'
 
 import styles from './blog-post.module.css'
 
 function BlogPost (props) {
-  const {body, authors, categories, title, mainImage, publishedAt} = props
+  const {body, title, mainImage, publishedAt} = props
   return (
     <article className={styles.root}>
       {mainImage && mainImage.asset && (
@@ -41,6 +41,7 @@ function BlogPost (props) {
               )}
             </div>
             {body && <ReactMarkdown source={body} renderers={{ code: CodeBlock, inlineCode: InlineCode }} />}
+            <JustComments apiKey='d76b5559-53f5-4f65-bd36-0c48cd423526' />
           </div>
         </div>
       </Container>
