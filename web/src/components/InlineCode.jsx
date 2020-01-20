@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
 const codeStyles = {
   fontFamily: '"Inconsolata", monospace',
@@ -7,22 +7,22 @@ const codeStyles = {
   padding: '1px 6px',
   backgroundColor: '#f7f7f7',
   border: '1px solid #ededed',
-  borderRadius: '5px'
-}
+  borderRadius: '5px',
+};
 
 class InlineCode extends PureComponent {
   render() {
-    const { value } = this.props
+    const { value } = this.props;
     return (
       <code style={codeStyles}>
         {value}
       </code>
-    )
+    );
   }
 }
 
 InlineCode.propTypes = {
   value: PropTypes.string.isRequired,
-}
+};
 
-export default InlineCode
+export default InlineCode;

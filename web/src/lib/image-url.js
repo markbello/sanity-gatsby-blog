@@ -1,8 +1,9 @@
-import clientConfig from '../../client-config'
-import imageUrlBuilder from '@sanity/image-url'
+/* eslint-disable import/prefer-default-export */
+import imageUrlBuilder from '@sanity/image-url';
+import clientConfig from '../../client-config';
 
-const builder = imageUrlBuilder(clientConfig.sanity)
+const builder = imageUrlBuilder(clientConfig.sanity);
 
-export function imageUrlFor (source) {
-  return builder.image(source)
+export function imageUrlFor(source) {
+  return builder.image(source);
 }
