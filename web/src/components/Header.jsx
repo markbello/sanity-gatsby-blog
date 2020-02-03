@@ -3,7 +3,7 @@ import React from 'react';
 import Icon from './icon/Icon';
 import { cn } from '../lib/helpers';
 
-import styles from './Header.module.css';
+import styles from './header.module.css';
 
 const Header = ({
   onHideNav,

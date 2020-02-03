@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 import '../styles/layout.css';
-import styles from './Layout.module.css';
+import styles from './layout.module.css';
 
 const Layout = ({
   children,

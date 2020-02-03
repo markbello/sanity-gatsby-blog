@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './Container.module.css';
+import styles from './container.module.css';
 
 const Container = ({ children }) => <div className={styles.root}>{children}</div>;
 

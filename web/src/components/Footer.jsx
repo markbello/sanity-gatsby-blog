@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import styles from './Footer.module.css';
+import styles from './footer.module.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
